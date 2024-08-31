@@ -1,0 +1,549 @@
+@charset "UTF-8";
+/* ベースのスタイル
+------------------------------------------ */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 62.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+a{color: aqua;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  display: block;
+  border-radius: 3.125rem;
+}
+.button:hover {
+  background-color: #fff;
+  border: 0.1875rem solid #46c4db;
+  color: #46c4db;
+}
+.enter-button {
+  background-color: #46c4db;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  border-radius: 3.125rem;
+  width: 12.5rem;
+  padding-top: 0.8125rem;
+  padding-bottom: 0.875rem;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+}
+/* 共通の部品
+------------------------------------------ */
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #d60e8a;
+  font-size: 1.25rem;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5625rem;
+  color: #777;
+  padding-bottom: 1.875rem;
+}
+
+.section-title:before,
+.section-title:after {
+  border-top: 0.125rem solid #777;
+  content: "";
+  width: 1.25rem;
+}
+.section-title:before {
+  margin-right: 0.625rem;
+}
+.section-title:after {
+  margin-left: 0.625rem;
+}
+
+
+/* header
+------------------------------------------ */
+.header-logo {
+  display: flex;
+  justify-content: center;
+}
+.header-logo img{
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  .header-logo img {
+    width: 75%;
+  }
+}
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+}
+#home {
+  background-image: url(../../assets/images/cover/main-bg.jpg);
+  height: 100vh;
+  position: relative;
+}
+.home-content {
+  text-align: center;
+  margin-top: 50%;
+}
+@media (min-width: 768px) {
+  .home-content {
+    margin-top: 30%;
+  }
+}
+.shop-enter {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.main-nav {
+  display: flex;
+  font-size: 1.125rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
+  padding: 0;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    font-size: 1.375rem;
+  }
+}
+.main-nav a {
+  color: #d60e8a;
+  text-decoration: none;
+}
+.main-nav a:hover {
+  color: #0834f8;
+}
+.main-nav li {
+  margin-right: 20px;
+}
+@media (min-width: 768px) {
+  .main-nav li {
+    margin-left: 3.125rem;
+  }
+}
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+  }
+}
+.page-title {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 2.8125rem;
+  }
+}
+.shop-name {
+  color: #d60e8a;
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-family: "Shadows Into Light", cursive;
+  padding-top: 1.875rem;
+}
+@media (min-width: 768px) {
+  .shop-name {
+    font-size: 1.5625rem;
+  }
+}
+.shop {
+  color: #d60e8a;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  font-family: "Shadows Into Light", cursive;
+}
+@media (min-width: 768px) {
+  .shop {
+    font-size: 2.8125rem;
+  }
+}
+.sp-none{
+  display: none;
+}
+
+/* お店について(コンセプト）
+------------------------------------------ */
+.about-us {
+  background-image: url(../../assets/images/about/about-02-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 1.25rem 1.0625rem 1.25rem 1.0625rem;
+  color: #fff;
+  line-height: 1.75;
+  border-radius: 0.625rem;
+}
+.about-us-item {
+  background-color: rgba(87, 131, 184, 0.5);
+  border-radius: 1.25rem;
+  padding: 0.625rem;
+
+}
+.shop-name-nikukyu{
+  color: #d60e8a;
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+/* お店について(営業時間等の案内）
+------------------------------------------ */
+.shop-informaiton-item-img {
+  display: flex;
+  align-items: center;
+}
+.shop-informaiton-description-bottom {
+  display: flex;
+}
+.shop-informaiton-item-img img {
+  width: 8%;
+}
+.shop-information {
+  margin-top: 1.25rem;
+}
+.shop-informaiton-group {
+  padding-bottom: 1.25rem;
+}
+
+.shop-informaiton-inportant-point {
+  display: flex;
+  padding-left: 1.25rem;
+}
+.shop-informaiton-description{
+  border-bottom: 0.0625rem #d60e8a dashed;
+
+}
+/* お店について(全体）
+------------------------------------------ */
+.about-shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+@media (min-width: 768px) {
+  .about-shop {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.25rem;
+  }
+}
+/* ネコの紹介
+------------------------------------------ */
+.cat{
+  margin-top: 3.125rem;
+}
+.cat-item {
+  background-color: #e0e4e9;
+  text-align: center;
+  border-radius: 0.625rem;
+}
+.cat-item img {
+  object-fit: cover;
+  width: 15.625rem;
+  margin: 1.25rem auto;
+  border-radius: 0.625rem;
+}
+@media (min-width: 768px) {
+.cat-item img {
+width: 12.5rem;}
+}
+.cat-text{
+  text-align: left;
+  padding: 0.625rem;
+}
+
+/* slick*/
+.slider {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .slider {
+    width: 100%;
+  }
+}
+.slider .slick-slide {
+  margin: 0 0.4375rem;
+}
+
+@media (min-width: 768px) {
+  .slider .slick-slide {
+    margin: 0 0.625rem;
+  }
+}
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+  height: auto !important;
+}
+
+/* Slickドット */
+.slick-dotted {
+  margin-bottom: 0;
+}
+.slick-dots {
+  display: flex;
+  column-gap: 1.0625rem;
+  justify-content: center;
+  bottom: -2.1875rem;
+}
+
+.slick-dots li {
+  height: auto;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin: 0;
+}
+
+.slick-dots li button {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  padding: 0;
+  border: 0.0625rem solid #ffd2d2;
+  background-color: #ffd2d2;
+  border-radius: 50%;
+}
+
+.slick-dots li button::before {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  line-height: normal;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.slick-dots li button:hover::before,
+.slick-dots li.slick-active button::before {
+  color: #fa7da3;
+  background-color: #fa7da3;
+  opacity: 1;
+}
+
+
+/* 飲み物
+------------------------------------------ */
+.drink,.fee {
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+@media (min-width: 768px) {
+  .drink,.fee {
+  margin-top: 4.375rem;}
+}
+
+.drink dl,
+.fee dl {
+  display: table;
+  width: 100%;
+  border: 0.0625rem dashed #777;
+  border-width: 0.0625rem 0;
+}
+.drink dt,
+.fee dt {
+  display: table-cell;
+  padding: 0.4rem;
+}
+.drink dd,
+.fee dd {
+  text-align: right;
+  display: table-cell;
+  padding: 0.4rem;
+}
+@media (min-width: 768px) {
+  .drink-container,
+  .fee-container {
+    max-width: 43.75rem;
+  }
+}
+
+/* よくある質問
+------------------------------------------ */
+.qa {
+  background: linear-gradient(to right, #e7d1e1, #d3eaf1);
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+  margin-bottom: 3.125rem;
+}
+
+.accordion_box li {
+  margin: 1.25rem 0;
+  border: 0.0625rem solid #1916ad;
+  border-radius: 0.625rem;
+}
+.title {
+  position: relative;
+  padding: 0.9375rem 3.125rem;
+  cursor: pointer;
+}
+
+/*＋アイコン*/
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  width: 0.9375rem;
+  height: 0.125rem;
+  background-color: #888;
+  transition: all 0.2s ease;
+}
+
+.title::before {
+  top: 48%;
+  left: 0.9375rem;
+  transform: rotate(0deg);
+}
+.title::after {
+  top: 48%;
+  left: 0.9375rem;
+  transform: rotate(90deg);
+}
+.title.close::before {
+  transform: rotate(45deg);
+}
+.title.close::after {
+  transform: rotate(-45deg);
+}
+.box {
+  display: none;
+  margin: 0 1.25rem 1.25rem;
+  padding: 1.25rem;
+  background: #dfe4ee;
+  border-radius: 0.625rem;
+}
+
+/* footer
+------------------------------------------ */
+.footer {
+  color: #d60e8a;
+  background-image: url(../../assets/images/footer/footer-bg.jpg);
+  text-align: center;
+  padding: 1.875rem;
+  margin-top: 3.125rem;
+  background-size: cover;
+}
+
+.footer a {
+  color:#d60e8a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #0834f8;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-nav a {
+  font-family: "Kiwi Maru", serif;
+}
+.footer-nav li {
+  padding: 0 1.25rem;
+  border-right: 0.0625rem #d60e8a solid;
+}
+@media (max-width: 600px) {
+  .footer .menu {
+    justify-content: flex-start;
+  }
+  .footer-nav li {
+    width: 50%;
+    box-sizing: border-box;
+    border: none;
+  }
+  .footer-nav li:nth-child(odd) {
+    border-right: 0.0625rem #d60e8a solid;
+  }
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+.instagram i,
+.facebook i,
+.twitter i {
+  font-size: 1.875rem;
+  color: #3b3939;
+}
+.instagram i:hover,.facebook i:hover,.twitter i:hover{
+  color: #3b3939;
+  opacity: 0.6;
+}
+
+
+/* フォームパーツのデザイン */
+.contact{
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+input, textarea {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.9375rem 1.25rem;
+  font-size: 1rem;
+  width: 12.5rem;
+}
+@media (min-width: 768px) {
+input, textarea {
+  font-size: 1.125rem;
+  width: 31.25rem;}
+}
+input::placeholder, textarea::placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+select {
+  background-color: #ccc;
+  border: none;
+  border-radius: 0.1875rem;
+  padding: 0.9375rem 1.25rem;
+  font-size: 1rem;
+}
+.contact-information{
+text-align: center;
+}
+.contact{
+  background-color:  #4f8b69;
+
+}
+.section-title-contact {
+  color: #fff;
+}
+.form-row{
+  padding-bottom: 1.25rem;
+}
